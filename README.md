@@ -17,3 +17,6 @@ Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during
 ![alt text](https://github.com/SmartPracticeschool/SBSPS-Challenge-2621-Sentiment-Analysis-of-COVID-19-Tweets-Visualization-Dashboard/blob/master/results/Image4.png?raw=true)
 
 
+<h2>Applications</h2>
+•	The analysis of these tweets gives an overview of the acceptance and feedback of the people on the Government decisions which are helpful in taking future decision.<br>
+•	The use of this information can be applied to make wiser decisions related to the use of resources, to make improvements in organizations, providing better services, and ultimately to improve the citizen lifestyle and the human relations in order to achieve a better society.
