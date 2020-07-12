@@ -1,7 +1,12 @@
 # SBSPS-Challenge-2621-Sentiment-Analysis-of-COVID-19-Tweets-Visualization-Dashboard
 
-<b>Problem Statement</b>
+<h2>Problem Statement</h2>
 To analyse the sentiment of Indian Twitter Users during the COVID-19 pandemic
+<br>
+<h2>Dataset</h2>
+Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during-covid19-pandemic
+
+<h2>Results</h2>
 
 ![alt text](https://github.com/SmartPracticeschool/SBSPS-Challenge-2621-Sentiment-Analysis-of-COVID-19-Tweets-Visualization-Dashboard/blob/master/results/Image1.png?raw=true)
 
