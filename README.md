@@ -3,7 +3,7 @@
 1. [ Problem Statement. ](#prob)
 2. [ Dataset. ](#dataset)
 3. [ Results. ](#result)
-4. [ Application. ](#application)
+4. [ Applications. ](#application)
 5. [ Links. ](#links)
 
 <a name="prob"></a>
@@ -27,7 +27,7 @@ Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during
 
 
 <a name="application"></a>
-## Application
+## Applications
 •	The analysis of these tweets gives an overview of the acceptance and feedback of the people on the Government decisions which are helpful in taking future decision.<br>
 •	The use of this information can be applied to make wiser decisions related to the use of resources, to make improvements in organizations, providing better services, and ultimately to improve the citizen lifestyle and the human relations in order to achieve a better society.
 
