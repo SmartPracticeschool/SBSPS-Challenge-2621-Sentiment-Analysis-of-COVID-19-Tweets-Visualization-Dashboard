@@ -32,5 +32,5 @@ Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during
 
 <a name="links"></a>
 ## Links
-  <a href="Link to video : https://drive.google.com/file/d/1QugLC7yCr5skR929sbqpnTNt_tcIwiJe/view">Presentation video</a>
+  <a href="https://drive.google.com/file/d/1QugLC7yCr5skR929sbqpnTNt_tcIwiJe/view">Presentation video</a>
   <a href="https://sentiment-analysis-dashboard-cassiopeia.000webhostapp.com/">Website</a>
