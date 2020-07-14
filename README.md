@@ -5,7 +5,7 @@
 3. [ Results. ](#result)
 4. [ Applications. ](#application)
 5. [ Links. ](#links)
-
+6. [ Team Members. ](#team)
 <a name="prob"></a>
 ## Problem Statement
 To analyse the sentiment of Indian Twitter Users during the COVID-19 pandemic
@@ -35,3 +35,9 @@ Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during
 ## Links
   <a href="https://drive.google.com/file/d/1QugLC7yCr5skR929sbqpnTNt_tcIwiJe/view">Presentation video</a><br>
   <a href="https://sentiment-analysis-dashboard-cassiopeia.000webhostapp.com/">Website</a>
+  
+<a name="team"></a>
+## Team Members
+Namitha S
+Meghana R
+Nikhitha Gururaj
