@@ -1,8 +1,14 @@
 # SBSPS-Challenge-2621-Sentiment-Analysis-of-COVID-19-Tweets-Visualization-Dashboard
+1. [ Problem Statement. ](#prob)
+2. [ Dataset. ](#dataset)
 
-<h2>Problem Statement</h2>
+<a name="prob"></a>
+## 1. Description
 To analyse the sentiment of Indian Twitter Users during the COVID-19 pandemic
 <br>
+
+<a name="dataset"></a>
+## 2. Dataset
 <h2>Dataset</h2>
 Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during-covid19-pandemic
 
