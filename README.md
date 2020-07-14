@@ -7,7 +7,7 @@
 5. [ References. ](#ref)
 
 <a name="prob"></a>
-## Problem Statement
+## 1. Problem Statement
 To analyse the sentiment of Indian Twitter Users during the COVID-19 pandemic
 <br>
 
