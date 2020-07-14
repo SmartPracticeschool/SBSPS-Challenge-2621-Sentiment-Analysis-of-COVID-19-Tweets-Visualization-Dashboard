@@ -1,4 +1,5 @@
 # SBSPS-Challenge-2621-Sentiment-Analysis-of-COVID-19-Tweets-Visualization-Dashboard
+<h2>Table of Contents</h2>
 1. [ Problem Statement. ](#prob)
 2. [ Dataset. ](#dataset)
 3. [ Results. ](#result)
