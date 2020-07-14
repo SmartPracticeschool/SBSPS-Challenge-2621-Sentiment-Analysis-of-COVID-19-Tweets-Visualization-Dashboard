@@ -38,6 +38,4 @@ Kaggle - https://www.kaggle.com/vagavoludheeraj/twitter-dateset-collected-during
   
 <a name="team"></a>
 ## Team Members
-Namitha S
-Meghana R
-Nikhitha Gururaj
+Namitha S | Meghana R | Nikhitha Gururaj
