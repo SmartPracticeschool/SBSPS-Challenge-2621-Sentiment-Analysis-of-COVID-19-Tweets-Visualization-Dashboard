@@ -1,0 +1,425 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/bdfdf182e9.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <!--
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-at"></i>
+            <i class="far fa-calendar-alt"></i>
+        -->
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script>
+        <script type="text/javascript">
+            Highcharts.maps["countries/in/custom/in-all-disputed"].copyrightShort = "";
+            if (screen.width < 800) {
+                var t2c = document.getElementById("t2").innerHTML;
+                var t3c = document.getElementById("t3").innerHTML;
+                document.getElementById("t2").innerHTML = t3c;
+                document.getElementById("t3").innerHTML = t2c;
+            }
+        </script>
+        <style>
+            body {
+                margin: 0;
+                border: 0;
+                padding: 0;
+                background-color: #EDF5E1;
+            }
+            .main {
+                height: 100%;
+            }
+            .content {
+                margin-bottom: 10%;
+            }
+            .top-menu {
+                margin-top: 0px;
+                height: 8%;
+                width: 100%;
+                background-color: #123C69;
+            }
+            .top-menu img {
+                margin-left: 10px;
+            }
+            .dropbtn {
+    visibility: hidden;
+    background-color: #123C69;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+
+.dropdown {
+  position: absolute;
+  top:0;
+  right: 10px;
+  height: 100%;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 5px;
+  background-color: #123c69;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            .bottom-menu{
+                position: fixed;
+                bottom: 0;
+                left: 35%;
+                width: 30%;
+                height: 8%;
+                padding: 0px;
+                background-color: #123C69;
+                z-index: 12;
+            }
+            .bottom-menu ul {
+                overflow: hidden;
+                list-style: none;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .bottom-menu li {
+                float: left;
+                width: 33%;
+                height: 100%;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-left: 1px solid gray;
+                border-right: 1px solid gray;
+            }
+            .bottom-menu li a {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                height: 100%;
+                padding-top: 8%;
+            }
+            .bottom-menu li:hover {
+                background-color: white;
+            }
+            .bottom-menu li:hover a {
+                color: #123C69;
+            }
+            .bottom-menu li:active {
+                background-color: white;
+            }
+            .bottom-menu li:active a {
+                color: #123C69;
+            }
+            .bottom-menu .active-link {
+                background-color: white;
+                border: 0;
+                border-top: 5px solid #123C69;
+                padding-top: 0;
+            }
+            .bottom-menu .active-link a {
+                color: #123C69;
+                cursor: default;
+            }
+            .content {
+                height: 82%;
+                width: 100%;
+            }
+            #mapContainer {
+                float: left;
+                height: 95%;
+                width: 500px;  
+                margin-top: 20px; 
+                margin-left: 20px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 5px silver; 
+            }
+            .wordcloud {
+                float: left;
+                width: 30%;
+                height: 95%;
+                margin-right: 2%;
+                margin-left: 2%;
+            }
+            .wordcloud img {
+                margin-top: 20px;
+                height: 100%;
+                width: 100%;
+                box-shadow: 5px 5px 5px silver;
+                border: 2px 2px solid silver;
+                border-radius: 20px;
+            }
+            #frame {
+                position: relative;
+                float: left;
+                margin-top: 70px;
+                margin-left: 1%;
+                height: 500px;
+                width: 460px;
+                background-image: url("frame.jpg");
+            }
+            .tweets {
+                position: relative;
+                width: 140px;
+                height: auto;
+                background-color: rgba(255,255,255,0.7);
+                border-radius: 20px;
+                overflow: visible;
+            }
+            .tweets-icon {
+                position: absolute;
+                top: -25px;
+                left: 45px;
+                width: 40px;
+                height: 40px;
+                background-color: #123C69;
+                color: white;
+                margin: 0;
+                padding: 4px 2px 0 2px;
+                border-radius: 50%;
+            }
+            .tweets p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                color: #123C69;
+                align-items: center;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin-bottom: 10px;
+            }
+            .tweets p span {
+                font-size: 24px;
+            }
+            #t1 {
+                margin-left: 50%;
+            }
+            #t2 {
+                margin-left: 45%;
+                margin-top: 25%;
+            }
+            #t3 {
+                margin-left: 80%;
+                margin-top: 40%;
+            }
+            .desc {
+                position: absolute;
+                z-index: 10;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+                font-weight: bold;
+                color: #123C69;
+                width: 100%;
+                height: auto;
+            }
+            #d1 {
+                position: absolute;
+                top:133;
+                left: 153;
+            }
+            #d2 {
+                position: absolute;
+                top: 151;
+                left: 146;
+            }
+            #d3 {
+                position: absolute;
+                top: 169;
+                left: 141;
+            }
+            #d4 {
+                position: absolute;
+                top: 187;
+                left: 135;
+            }
+            #d5 {
+                position: absolute;
+                top: 205;
+                left: 128;
+            }
+            #d6 {
+                position: absolute;
+                top: 223;
+                left: 126;
+            }
+            #d7 {
+                position: absolute;
+                top: 241;
+                left: 120;
+            }
+            #d8 {
+                position: absolute;
+                top: 259;
+                left: 115;
+            }
+            #d9 {
+                position: absolute;
+                top: 277;
+                left: 120;
+            }
+            #d10 {
+                position: absolute;
+                top: 295;
+                left: 135;
+            }
+            #d11 {
+                position: absolute;
+                top: 313;
+                left: 170;
+            }
+            #credits {
+                position: fixed;
+                bottom: 5px;
+                right: 0;
+                height : 40px;
+            }
+            @media screen and (max-width: 1515px) {
+                .wordcloud {
+                    width: 20%;
+                    margin-left: 5%;
+                    height: 80%;
+                    margin-top: 5%;
+                    margin-bottom: 12%;
+                }
+            }
+            @media screen and (max-width: 1360px) {
+                #mapContainer {
+                    margin-left: 12%;
+                    width: 70%;
+                }
+                #frame {
+                    margin-left: 20%;
+                }
+                .wordcloud {
+                    margin-top: 10%;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    width: 50%;
+                    height: 95%;
+                }
+                .bottom-menu {
+                    left: 10%;
+                    width: 75%;}
+                .top-menu {
+                    width: 100%;
+                }
+                .top-menu img {
+                    margin-left: 45%;
+                }
+                #t3 {
+                    top: 50%;
+                }
+            }
+            @media screen and (max-width: 800px){
+                .wordcloud {
+                    margin-top: 20%;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    width: 80%;
+                    height: 95%;
+                }
+                .bottom-menu {
+                    visibility: hidden;
+                }
+                .dropbtn {
+                    visibility: visible;
+                }
+                #frame {
+                    margin-left: 5%;
+                }
+                #t3 {
+                    margin-left: 5%;
+                    top: 60%;
+                }
+            }
+            @media screen and (max-width: 400px){
+                .top-menu{
+                    width: 100%;
+                }
+                #mapContainer {
+                    width: 90%;
+                }
+                #frame {
+                    margin-left: 0;
+                   transform: scaleX(0.8);
+                }
+            }
+        </style>
+    </head>
+    <body>
+            <div class="top-menu">
+                <img src="nm_logo3.png" height="100%">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-ellipsis-v fa-2x"></i></button>
+                    <div class="dropdown-content">
+                      <a href="dashb2.html"><i class="far fa-chart-bar fa-2x"></i></a>
+                      <a href="dashb3.html"><i class="fas fa-users fa-2x"></i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="content" id="primary"> 
+                <div id="mapContainer"></div>
+                    <script src="finalmap.js"></script>
+                    <div id="frame">
+                        <div class="desc">
+                            <div id="d1">In the past two</div>
+                            <div id="d2">decades, the growth of</div>
+                            <div id="d3">social data on the web has</div>
+                            <div id="d4">rapidly increased. Especially,</div>
+                            <div id="d5">during this pandemic, many</div>
+                            <div id="d6">individuals including</div>
+                            <div id="d7">media organizations and </div>
+                            <div id="d8">government agencies are</div>
+                            <div id="d9">presenting the latest news</div>
+                            <div id="d10">and opinions regarding</div>
+                            <div id="d11"> the coronavirus.</div>
+                        </div>
+                        <div class="tweets" id="t1">
+                            <div class="tweets-icon"><center><i class="fab fa-twitter fa-2x"></i></center></div>
+                            <center><p><span>8.2 lakh</span><br>Tweets Analysed</p></center>
+                        </div>
+                        <div class="tweets" id="t3">
+                            <div class="tweets-icon"><center><i class="fas fa-hashtag fa-2x"></i></center></div>
+                            <center><p><span>Most</span><br>Used Hashtags</p></center>
+                        </div>
+                        <div class="tweets" id="t2">
+                            <div class="tweets-icon"><center><i class="far fa-calendar-alt fa-2x"></i></center></div>
+                            <center><p>From<br><span>01/03</span><br>
+                                        To<br><span>09/06</span></p></center>
+                        </div>
+                        
+                    </div>
+                    <div class="wordcloud">
+                        <img src="wordcloud_hash.jpg">
+                    </div>
+                </div>
+            <div class="bottom-menu">
+                <ul>
+                    <li class="active-link"><a href=""><i class="fas fa-globe-asia fa-2x"></i></a></li>
+                    <li><a href="dashb2.html"><i class="far fa-chart-bar fa-2x"></i></a></li>
+                    <li><a href="dashb3.html"><i class="fas fa-users fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <img id="credits" src="team_name.png">
+    </body>
+</html>

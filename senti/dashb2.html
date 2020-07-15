@@ -1,0 +1,739 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/bdfdf182e9.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+        <script type="text/javascript">
+            window.onload = function () {
+            CanvasJS.addColorSet("opt5",
+            [
+                "#79B473",
+                "#365938",
+                "#EEDD66",
+                "#41658A",
+                "#F7BDB5",
+                "#E68F40",
+                "#6E9299",
+                "#ED6A5A"
+            ]);
+              var chart1 = new CanvasJS.Chart("chartContainer1",
+              {
+              colorSet: "opt5",
+                title:{
+                  text: "March",
+                  fontFamily: 'Montserrat',
+                  fontWeight: "bolder"
+                },
+          
+                legend:{
+                  verticalAlign: "center",
+                  horizontalAlign: "right"
+                },
+                animationEnabled: true,
+                data: [
+                {
+                  //startAngle: 45,
+                 indexLabelFontSize: 20,
+                 indexLabelFontFamily: "Garamond",
+                 indexLabelFontColor: "darkgrey",
+                 indexLabelLineColor: "darkgrey",
+                 indexLabelPlacement: "outside",
+                 type: "doughnut",
+                 radius: "90%", 
+                  innerRadius: "60%", 
+                 showInLegend: true,
+                 dataPoints: [
+                    {  y: 1998, legendText:"Anger"},
+                    {  y: 3261, legendText:"Anticipation"},
+                    {  y: 1045, legendText:"Disgust"},
+	                {  y: 4127, legendText:"Fear"},
+                    {  y: 4441, legendText:"Joy"},
+                    {  y: 2219, legendText:"Sadness"},
+                    {  y: 1216, legendText:"Surprise"},
+                    {  y: 6511, legendText:"Trust"}
+                    ]
+                }
+                ]
+
+             });
+
+             var chart2 = new CanvasJS.Chart("chartContainer2",
+              {
+              colorSet: "opt5",
+                title:{
+                  text: "April",
+                  fontFamily: 'Montserrat',
+                  fontWeight: "bolder"
+                },
+          
+                legend:{
+                  verticalAlign: "center",
+                  horizontalAlign: "right"
+                },
+                animationEnabled: true,
+                data: [
+                {
+                  //startAngle: 45,
+                 indexLabelFontSize: 20,
+                 indexLabelFontFamily: "Garamond",
+                 indexLabelFontColor: "darkgrey",
+                 indexLabelLineColor: "darkgrey",
+                 indexLabelPlacement: "outside",
+                 type: "doughnut",
+                 radius: "90%", 
+                    innerRadius: "60%", 
+                 showInLegend: true,
+                 dataPoints: [
+                    {  y: 3157, legendText:"Anger"},
+                    {  y: 9760, legendText:"Anticipation"},
+                    {  y: 2848, legendText:"Disgust"},
+	                {  y: 10747, legendText:"Fear"},
+                    {  y: 12140, legendText:"Joy"},
+                    {  y: 6744, legendText:"Sadness"},
+                    {  y: 3508, legendText:"Surprise"},
+                    {  y: 17009, legendText:"Trust"}
+                    ]
+               }
+               ]
+             });
+
+             var chart3 = new CanvasJS.Chart("chartContainer3",
+              {
+              colorSet: "opt5",
+                title:{
+                  text: "May",
+                  fontFamily: 'Montserrat',
+                  fontWeight: "bolder"
+                },
+          
+                legend:{
+                  verticalAlign: "center",
+                  horizontalAlign: "right"
+                },
+                animationEnabled: true,
+                data: [
+                {
+                  //startAngle: 45,
+                 indexLabelFontSize: 20,
+                 indexLabelFontFamily: "Garamond",
+                 indexLabelFontColor: "darkgrey",
+                 indexLabelLineColor: "darkgrey",
+                 indexLabelPlacement: "outside",
+                 type: "doughnut",
+                 radius: "90%", 
+                  innerRadius: "60%", 
+                 showInLegend: true,
+                 dataPoints: [
+                    {  y: 7450.043, legendText:"Anger"},
+                    {  y: 13879.892, legendText:"Anticipation"},
+                    {  y: 4062.12, legendText:"Disgust"},
+                    {  y: 15152.598, legendText:"Fear"},
+                    {  y: 16372.476, legendText:"Joy"},
+                    {  y: 10322.149, legendText:"Sadness"},
+                    {  y: 4928.755, legendText:"Surprise"},
+                    {  y: 22399.145, legendText:"Trust"}
+                    ]
+                }
+                ]
+             });
+
+             var chart4 = new CanvasJS.Chart("chartContainer4",
+              {
+              colorSet: "opt5",
+                title:{
+                  text: "June",
+                  fontFamily: 'Montserrat',
+                  fontWeight: "bolder"
+                },
+          
+                legend:{
+                  verticalAlign: "center",
+                  horizontalAlign: "right"
+                },
+                animationEnabled: true,
+                data: [
+                {
+                  //startAngle: 45,
+                 indexLabelFontSize: 20,
+                 indexLabelFontFamily: "Garamond",
+                 indexLabelFontColor: "darkgrey",
+                 indexLabelLineColor: "darkgrey",
+                 indexLabelPlacement: "outside",
+                 type: "doughnut",
+                 radius: "90%", 
+                  innerRadius: "60%", 
+                 showInLegend: true,
+                 dataPoints: [
+                    {  y: 1791, legendText:"Anger"},
+                    {  y: 3256, legendText:"Anticipation"},
+                    {  y: 1099, legendText:"Disgust"},
+	                {  y: 3975, legendText:"Fear"},
+                    {  y: 3616, legendText:"Joy"},
+                    {  y: 2851, legendText:"Sadness"},
+                    {  y: 1217, legendText:"Surprise"},
+                    {  y: 5131, legendText:"Trust"}
+                    ]
+                }
+                ]
+
+             });
+
+             var chart5 = new CanvasJS.Chart("rtChartContainer", {
+	            animationEnabled: true,
+	            theme: "light2",
+	            title:{
+                    text: "Actively followed Indian COVID Updates Accounts",
+                    fontFamily: 'Montserrat',
+                    fontWeight: "bolder"
+	            },
+	            axisX:{
+		            valueFormatString: "DD MMM",
+		            crosshair: {
+			        enabled: true,
+			        snapToDataPoint: true
+		            }
+	            },
+	            axisY: {
+		            title: "Number of Retweets",
+		            titleFontWeight:"bold",
+		            crosshair: {
+			            enabled: true
+		            }
+	            },
+	            toolTip:{
+                    shared:true
+	            },  
+	            legend:{
+		            cursor:"pointer",
+		            verticalAlign: "top",
+                    horizontalAlign: "right",
+		            dockInsidePlotArea: true
+	            },
+                data: [{
+		            type: "line",
+            		showInLegend: true,
+		            name: "MoHFW",
+		            markerType: "square",
+		            xValueFormatString: "DD MMM, YYYY",
+	    	        color: "#F08080",
+    		        dataPoints: [
+			            { x: new Date(2020, 3, 07), y:  12950},
+			            { x: new Date(2020, 3, 14), y: 37174 },
+			            { x: new Date(2020, 3, 21), y: 29550 },
+			            { x: new Date(2020, 3, 28), y: 23826 },
+			            { x: new Date(2020, 4, 04), y: 15274 },
+			            { x: new Date(2020, 4, 11), y: 11178 },
+			            { x: new Date(2020, 4, 18), y: 9384 },
+			            { x: new Date(2020, 4, 25), y: 9773 },
+			            { x: new Date(2020, 5, 02), y: 8270 },
+			            { x: new Date(2020, 5, 09), y: 8062 },
+			            { x: new Date(2020, 5, 16), y: 6893 },
+			            { x: new Date(2020, 5, 23), y: 6918 },
+			            { x: new Date(2020, 5, 29), y: 6463 },
+                        { x: new Date(2020, 6, 06), y: 5280 },
+                        { x: new Date(2020, 6, 09), y: 1569 }			
+		            ]
+	            },
+	            {
+                	type: "line",
+		            showInLegend: true,
+                    name: "MIB",
+		            //lineDashType: "dash",
+		            dataPoints: [
+                        { x: new Date(2020, 3, 07), y: 0},
+			            { x: new Date(2020, 3, 14), y: 0 },
+			            { x: new Date(2020, 3, 21), y: 0 },
+			            { x: new Date(2020, 3, 28), y: 0 },
+			            { x: new Date(2020, 4, 04), y: 7911 },
+			            { x: new Date(2020, 4, 11), y: 14864 },
+			            { x: new Date(2020, 4, 18), y: 10357 },
+			            { x: new Date(2020, 4, 25), y: 9294 },
+			            { x: new Date(2020, 5, 02), y: 8485 },
+			            { x: new Date(2020, 5, 09), y: 6400 },
+			            { x: new Date(2020, 5, 16), y: 8498 },
+			            { x: new Date(2020, 5, 23), y: 7438 },
+			            { x: new Date(2020, 5, 29), y: 6928 },
+                        { x: new Date(2020, 6, 06), y: 6089 },
+                        { x: new Date(2020, 6, 09), y: 1991 }			
+			
+		            ]
+                },
+                {
+                	type: "line",
+		            showInLegend: true,
+                    name: "Indian Police",
+                    markerType:"triangle",
+                    color: "#41658A",
+		            //lineDashType: "dash",
+		            dataPoints: [
+                        { x: new Date(2020, 3, 07), y: 45},
+			            { x: new Date(2020, 3, 14), y: 351 },
+			            { x: new Date(2020, 3, 21), y: 2110 },
+			            { x: new Date(2020, 3, 28), y: 6076 },
+			            { x: new Date(2020, 4, 04), y: 3502 },
+			            { x: new Date(2020, 4, 11), y: 2999 },
+			            { x: new Date(2020, 4, 18), y: 1703 },
+			            { x: new Date(2020, 4, 25), y: 2501 },
+			            { x: new Date(2020, 5, 02), y: 1561 },
+			            { x: new Date(2020, 5, 09), y: 2190 },
+			            { x: new Date(2020, 5, 16), y: 2068 },
+			            { x: new Date(2020, 5, 23), y: 985 },
+			            { x: new Date(2020, 5, 29), y: 599 },
+                        { x: new Date(2020, 6, 06), y: 780 },
+                        { x: new Date(2020, 6, 09), y: 128 }
+                    ]
+                }]
+            });
+          
+              chart1.render();
+              chart2.render();
+              chart3.render();
+              chart4.render();
+              chart5.render();
+            }
+            </script>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                border: 0;
+                padding: 0;
+                background-color: #EDF5E1;
+            }
+            .main {
+                height: 100%;
+            }
+            .top-menu {
+                margin-top: 0px;
+                height: 8%;
+                width: 100%;
+                background-color: #123C69;
+            }
+            .top-menu img {
+                margin-left: 10px;
+            }
+            .dropbtn {
+    visibility: hidden;
+    background-color: #123C69;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+
+.dropdown {
+  position: absolute;
+  top:0;
+  right: 10px;
+  height: 100%;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 5px;
+  background-color: #123c69;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            .bottom-menu{
+                position: fixed;
+                bottom: 0;
+                left: 35%;
+                width: 30%;
+                height: 8%;
+                padding: 0px;
+                background-color: #123C69;
+            }
+            .bottom-menu ul {
+                overflow: hidden;
+                list-style: none;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .bottom-menu li {
+                float: left;
+                width: 33%;
+                height: 100%;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-left: 1px solid gray;
+                border-right: 1px solid gray;
+            }
+            .bottom-menu li a {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                height: 100%;
+                padding-top: 8%;
+            }
+            .bottom-menu li:hover {
+                background-color: white;
+            }
+            .bottom-menu li:hover a {
+                color: #123C69;
+            }
+            .bottom-menu li:active {
+                background-color: white;
+            }
+            .bottom-menu li:active a {
+                color: #123C69;
+            }
+            .bottom-menu .active-link {
+                background-color: white;
+                border: 0;
+                border-top: 5px solid #123C69;
+                padding-top: 0;
+            }
+            .bottom-menu .active-link a {
+                color: #123C69;
+                cursor: default;
+            }
+            .content {
+                height: 82%;
+                width: 100%;
+            }
+            .highcharts-figure, .highcharts-data-table table {
+                min-width: 310px; 
+                margin: 0;
+            }
+            #donutContainer1 {
+                float: left;
+            }
+            #donutContainer2 {
+                float: left;
+                margin-left: 10px;
+            }
+            .donutClass {
+                height: 280px;
+                width: 300px;
+                margin-left : 20px;
+                margin-top: 30px;
+                box-shadow: 5px 5px 5px silver;
+                overflow: hidden;
+                border-radius: 20px;
+            }
+            #barContainer1 {
+                float: right;
+                height: 280px;
+                width: 35%;
+                margin-right : 20px;
+                margin-top: 20px;
+                box-shadow: 5px 5px 5px silver;
+                border-radius: 20px;
+            }
+
+            #rtChartContainer {
+                float: right;
+                height: 300px;
+                width: 35%;
+                margin-right : 20px;
+                margin-top: 25px;
+                box-shadow: 5px 5px 5px silver;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            .highcharts-data-table table {
+	            font-family: 'Montserrat';
+	            border-collapse: collapse;
+	            border: 1px solid #EBEBEB;
+	            margin: 10px auto;
+	            /*text-align: center;*/
+	            width: 100%;
+	            max-width: 500px;
+                font-weight: bold;
+            }
+            .highcharts-data-table caption {
+                padding: 1em 0;
+                font-size: 1.2em;
+                color: #555;
+                font-weight: bold;
+            }
+            .highcharts-data-table th {
+	            font-weight: 600;
+                padding: 0.5em;
+            }
+            .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+                padding: 0.5em;
+            }
+            .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+                background: #f8f8f8;
+            }
+            .highcharts-data-table tr:hover {
+                background: #f1f7ff;
+            }
+            .desc {
+                height: 100%;
+            }
+            .cimg {
+                position: relative;
+                float: left;
+                margin-top: 50px;
+                margin-left: 30px;
+                height : auto;
+                width: 18%;
+                background-color: white;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-top: 5px solid #123C69;
+                border-left: 5px solid #123C69;
+                box-shadow: 5px 5px 5px silver;
+            }
+            .cimg p {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                color: #123C69;
+                align-items: center;
+                margin-top: 20px;
+            }
+            .cimg ul {
+                list-style-type: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                color: #123C69;
+                margin-left: 15px;
+            }
+            .cimg ul li:before {    
+                font-family: 'FontAwesome';
+                content: '\f099';
+                margin:0 5px 0 -15px;
+                color: #123C67;
+            }
+            .ico {
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                width: 40px;
+                height: 40px;
+                background-color: #123C69;
+                color: white;
+                margin: 0;
+                padding: 4px 2px 0 2px;
+                border-radius: 50%;
+                align-items: center;
+            }
+            .cimg-r {
+                position: relative;
+                float: left;
+                margin-top: 30px;
+                margin-left: 15px;
+                height : auto;
+                width: 18%;
+                background-color: white;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-top: 5px solid #123C69;
+                border-right: 5px solid #123C69;
+                box-shadow: -5px 5px 5px silver;
+            }
+            .cimg-r p {
+                margin-left: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                color: #123C69;
+                align-items: center;
+            }
+            #r{
+                left: -15px;
+            }
+            #credits {
+                position: fixed;
+                bottom: 1vw;
+                right: 0;
+                height : 40px;
+            }
+        @media screen and (max-width: 1530px) {
+            #barContainer1 {width: 95%;}
+            .desc {width: 52%;
+            float: right;
+            display: block; }
+            #desc1,#desc2,#desc3 { width: 25%;}
+            #desc3 {
+                margin-top: 0;
+            }
+            .cimg-r {margin-top: 100px;}
+            #rtChartContainer{width:95%; }
+        }    
+        @media screen and (max-width: 1368px) {
+            .bottom-menu {
+                left: 10%;
+                width: 75%;}
+            .top-menu img {
+                margin-left: 45%;
+            }
+            .donutClass {width: 250px;
+            }
+        }
+        @media screen and (max-width: 1150px) {
+            .desc {width: 100%;}
+            #desc1 {
+                width: 90%;
+            }
+            #barContainer1 {
+                width: 95%;
+            }
+            #desc2 {
+                width: 90%;
+            }
+            .donutClass{width:350px;
+            margin-left: 40%;}
+            #donutContainer2 {
+                margin-left: 10%;
+            }
+            #rtChartContainer {
+                width: 95%;
+                
+            }
+            #desc3 {
+                margin-top: 50px;
+                width: 90%;
+            }
+            .bottom-menu {
+                left: 10%;
+                width: 75%;
+                }
+            .top-menu img {
+                margin-left: 45%;
+            }
+        }
+        @media screen and (max-width: 680px) {
+            .donutClass {width: 250px;
+            margin-left: 10%;}
+            .bottom-menu {
+                    visibility: hidden;
+                }
+            .dropbtn {
+                    visibility: visible;
+                }
+                .dropdown-content{
+                    visibility: visible;
+                }
+        }
+        @media screen and (max-width: 920px) {
+            .donutClass {width: 250px;
+            margin-left: 10%;}
+            #donutContainer1, #donutContainer2 {
+                margin-left: 10%;
+            }
+        }
+        @media screen and (max-width: 550px){
+            .donutClass {
+                width: 300px;
+                margin-left: 0;
+            }
+
+        }
+        @media screen and (max-width: 350px){
+            .donutClass {
+                width: 250px;
+            }
+            #donutContainer1, #donutContainer2 {
+                margin-left: 5%;
+            }
+            .cimg,.cimg-r {width: 60%;}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="top-menu">
+                <img src="nm_logo3.png" height="100%">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-ellipsis-v fa-2x"></i></button>
+                    <div class="dropdown-content">
+                      <a href="dashb1.html"><i class="fas fa-globe-asia fa-2x"></i></a>
+                      <a href="dashb3.html"><i class="fas fa-users fa-2x"></i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="content">
+                <figure class="highcharts-figure">
+                    <div id="barContainer1"></div>
+                </figure>  
+                <script src="bar_hori.js">
+                </script>
+                <div id="donutContainer1">
+                    <div class="donutClass" id="chartContainer1">
+                    </div>
+                    <div class="donutClass" id="chartContainer2">
+                    </div>
+                </div>
+                <div id="donutContainer2">
+                    <div class="donutClass" id="chartContainer3">
+                    </div>
+                    <div class="donutClass" id="chartContainer4">
+                    </div>
+                </div>
+                <div class="desc">
+                <div class="cimg" id="desc1">
+                    <div class="ico"><center><i class="fas fa-clipboard-list fa-2x"></i></center></div>
+                    <p>Even though during the beginning and towards Unlock phases it can be seen that the users sentiment reflect 
+                        a conflicted outlook, it could be noted that Indian Twitter Users remained mostly positive.</p>
+                </div>
+                <br>
+                <div class="cimg-r" id="desc2">
+                    <div class="ico" id="r"><center><i class="fas fa-clipboard-list fa-2x"></i></center></div>
+                    <p>Outstanding Emotions - Trust and Fear -
+                        The high percentage of trust and lower percentage of fear indicates that the users 
+                        seemed hopeful that they could get through this pandemic. </p>
+                </div>
+                <br>
+                <div class="cimg" id="desc3">
+                    <div class="ico"><center><i class="fas fa-clipboard-list fa-2x"></i></center></div>
+                    <p>On Twitter, certain verified accounts give day-to-day updates regarding the pandemic. 
+                        These updates focus on COVID statistics and lockdown updates. <br>
+                        <ul>Accounts:<li>@MoHFW_INDIA</li>
+                            <li>@CovidnewsbyMIB</li>
+                            <li>Verified Twitter Accounts of Police Forces of respective states</li></ul></p>
+                </div>
+                <div id="line-chart">
+                    <div id="rtChartContainer"></div>
+                </div>
+                </div>
+            </div>
+            <div class="bottom-menu">
+                <ul>
+                    <li><a href="dashb1.html"><i class="fas fa-globe-asia fa-2x"></i></a></li>
+                    <li class="active-link"><a href=""><i class="far fa-chart-bar fa-2x"></i></a></li>
+                    <li><a href="dashb3.html"><i class="fas fa-users fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <img id="credits" src="team_name.png">
+        </div>
+    </body>
+</html>

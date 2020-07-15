@@ -1,0 +1,535 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-at"></i>
+            <i class="far fa-calendar-alt"></i>
+        -->
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bdfdf182e9.js" crossorigin="anonymous"></script>
+        <script>
+            window.onload = function () {
+            
+            var chart1 = new CanvasJS.Chart("jChartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title:{
+                    text: "#JanthaCurfew"
+                },
+                axisX:{
+                    valueFormatString: "DD MMM",
+                    crosshair: {
+                        enabled: true,
+                        snapToDataPoint: true
+                    }
+                },
+                axisY: {
+                    title: "Number of tweets",
+                    titleFontWeight:"bold",
+                    crosshair: {
+                        enabled: true
+                    }
+                },
+                toolTip:{
+                    shared:true
+                },  
+                legend:{
+                    cursor:"pointer",
+                    verticalAlign: "top",
+                    horizontalAlign: "right",
+                    dockInsidePlotArea: true
+                },
+                data: [{
+                    type: "line",
+                    showInLegend: true,
+                    name: "Positive",
+                    markerType: "square",
+                    xValueFormatString: "DD MMM, YYYY",
+                    color: "#F08080",
+                    dataPoints: [
+                        { x: new Date(2020, 2, 19), y: 27 },
+                        { x: new Date(2020, 2, 20), y: 21 },
+                        { x: new Date(2020, 2, 21), y: 29 },
+                        { x: new Date(2020, 2, 22), y: 41 },
+                        { x: new Date(2020, 2, 23), y: 5 },
+                        { x: new Date(2020, 2, 24), y: 1 },
+                        { x: new Date(2020, 2, 25), y: 1 },
+                        { x: new Date(2020, 2, 26), y: 1 },
+                        { x: new Date(2020, 2, 27), y: 0 },
+                        { x: new Date(2020, 2, 28), y: 1 },
+                        { x: new Date(2020, 2, 29), y: 1 },
+                        { x: new Date(2020, 2, 30), y: 1 },
+                        { x: new Date(2020, 2, 31), y: 2 },
+                        { x: new Date(2020, 3, 3), y: 2 },
+                        { x: new Date(2020, 3, 4), y: 1 }
+                        
+                    ]
+                },
+                {
+                    type: "line",
+                    showInLegend: true,
+                    name: "Negative",
+                    //lineDashType: "dash",
+                    dataPoints: [
+                        { x: new Date(2020, 2, 19), y: 14 },
+                        { x: new Date(2020, 2, 20), y: 15 },
+                        { x: new Date(2020, 2, 21), y: 14 },
+                        { x: new Date(2020, 2, 22), y: 36 },
+                        { x: new Date(2020, 2, 23), y: 2 },
+                        { x: new Date(2020, 2, 24), y: 2 },
+                        { x: new Date(2020, 2, 25), y: 1 },
+                        { x: new Date(2020, 2, 26), y: 0 },
+                        { x: new Date(2020, 2, 27), y: 1 },
+                        { x: new Date(2020, 2, 28), y: 1 },
+                        { x: new Date(2020, 2, 29), y: 0 },
+                        { x: new Date(2020, 2, 30), y: 1 },
+                        { x: new Date(2020, 2, 31), y: 1 },
+                        { x: new Date(2020, 3, 3), y: 0 },
+                        { x: new Date(2020, 3, 4), y: 2 },
+                        
+                    ]
+                }]
+            });
+            
+            var chart2 = new CanvasJS.Chart("aChartContainer", {
+	            animationEnabled: true,
+	            theme: "light2", // "light1", "light2", "dark1", "dark2"
+	            title:{
+		            text: "#AarogyaSetu"
+	            },
+	            axisY: {
+		            title: "Number of tweets",
+		            titleFontWeight: "bold"
+	            },
+	            axisX:{
+                    labelFontWeight: "bold"
+                },
+	            data: [{        
+		            type: "column",  
+		            //showInLegend: true, 
+		        dataPoints: [      
+			        { y: 331, label: "Positive", color:"#F08080" },
+			        { y: 125,  label: "Negative", color:"#2CC980" }
+			
+		            ]
+	            }]
+            });            
+
+            var chart3 = new CanvasJS.Chart("cChartContainer", {
+	            animationEnabled: true,
+	            theme: "light2",
+	            title:{
+                    text: "#9Baje9Minutes"
+	            },
+	            axisX:{
+		            valueFormatString: "DD MMM",
+		            crosshair: {
+			        enabled: true,
+			        snapToDataPoint: true
+		            }
+	            },
+	            axisY: {
+		            title: "Number of tweets",
+		            titleFontWeight:"bold",
+		            crosshair: {
+			            enabled: true
+		            }
+	            },
+	            toolTip:{
+                    shared:true
+	            },  
+	            legend:{
+		            cursor:"pointer",
+		            verticalAlign: "top",
+		            horizontalAlign: "right",
+		            dockInsidePlotArea: true
+	            },
+                data: [{
+		            type: "line",
+            		showInLegend: true,
+		            name: "Positive",
+		            markerType: "square",
+		            xValueFormatString: "DD MMM, YYYY",
+	    	        color: "#F08080",
+    		        dataPoints: [
+			            { x: new Date(2020, 3, 6), y: 53 },
+			            { x: new Date(2020, 3, 7), y: 88 },
+			            { x: new Date(2020, 3, 8), y: 8 },
+			            { x: new Date(2020, 3, 9), y: 3 },
+			            { x: new Date(2020, 3, 10), y: 2 },
+			            { x: new Date(2020, 3, 11), y: 2 },
+			            { x: new Date(2020, 3, 12), y: 0 },
+			            { x: new Date(2020, 3, 13), y: 3 },
+			            { x: new Date(2020, 3, 14), y: 1 },
+			            { x: new Date(2020, 3, 15), y: 0 },
+			            { x: new Date(2020, 3, 16), y: 0 },
+			            { x: new Date(2020, 3, 17), y: 0 },
+			            { x: new Date(2020, 3, 19), y: 2 },
+			            { x: new Date(2020, 3, 21), y: 0 }			
+		            ]
+	            },
+	            {
+                	type: "line",
+		            showInLegend: true,
+                	name: "Negative",
+		            //lineDashType: "dash",
+		            dataPoints: [
+			            { x: new Date(2020, 3, 6), y: 77 },
+			            { x: new Date(2020, 3, 7), y: 31 },
+			            { x: new Date(2020, 3, 8), y: 12 },
+			            { x: new Date(2020, 3, 9), y: 3 },
+			            { x: new Date(2020, 3, 10), y: 4 },
+                		{ x: new Date(2020, 3, 11), y: 1 },
+			            { x: new Date(2020, 3, 12), y: 1 },
+			            { x: new Date(2020, 3, 13), y: 2 },
+			            { x: new Date(2020, 3, 14), y: 2 },
+			            { x: new Date(2020, 3, 15), y: 1 },
+			            { x: new Date(2020, 3, 16), y: 0 },
+			            { x: new Date(2020, 3, 17), y: 1 },
+			            { x: new Date(2020, 3, 19), y: 0 },
+			            { x: new Date(2020, 3, 21), y: 1 }			
+			
+		            ]
+	                }]
+                });
+                chart1.render();
+                chart2.render();
+                chart3.render();
+                }
+                function like(x){
+                    document.getElementById('btn').className = "fas fa-heart";
+                }
+            </script>
+        <style>
+            body {
+                margin: 0;
+                border: 0;
+                padding: 0;
+                background-color: #EDF5E1;
+            }
+            .main {
+                height: 100%;
+                width: 100%;
+            }
+            .top-menu {
+                margin-top: 0px;
+                height: 8%;
+                width: 100%;
+                background-color: #123C69;
+            }
+            .top-menu img {
+                margin-left: 10px;
+            }
+            .dropbtn {
+    visibility: hidden;
+    background-color: #123C69;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+
+.dropdown {
+  position: absolute;
+  top:0;
+  right: 10px;
+  height: 100%;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 5px;
+  background-color: #123c69;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            .bottom-menu{
+                position: fixed;
+                bottom: 0;
+                left: 35%;
+                width: 30%;
+                height: 8%;
+                padding: 0px;
+                background-color: #123C69;
+            }
+            .bottom-menu ul {
+                overflow: hidden;
+                list-style: none;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .bottom-menu li {
+                float: left;
+                width: 33%;
+                height: 100%;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-left: 1px solid gray;
+                border-right: 1px solid gray;
+            }
+            .bottom-menu li a {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                height: 100%;
+                padding-top: 8%;
+            }
+            .bottom-menu li:hover {
+                background-color: white;
+            }
+            .bottom-menu li:hover a {
+                color: #123C69;
+            }
+            .bottom-menu li:active {
+                background-color: white;
+            }
+            .bottom-menu li:active a {
+                color: #123C69;
+            }
+            .bottom-menu .active-link {
+                background-color: white;
+                border: 0;
+                border-top: 5px solid #123C69;
+                padding-top: 0;
+            }
+            .bottom-menu .active-link a {
+                color: #123C69;
+                cursor: default;
+            }
+            .content {
+                width: 100%;
+                height: 82%;
+            }
+            .j {
+                float: left;
+                width: 32%;
+            }
+            .a {
+                margin-top: 1%;
+                float: left;
+                width: 32%;
+                margin-left: 3%;
+            }
+            .c {
+                float: left;
+                width: 32%;
+            }
+            .chartContainer {
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                box-shadow: 5px 5px 5px silver;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            #jChartContainer {
+                float: left;
+                height: 300px;
+                width: 95%;
+            }
+            .cimg {
+                position: relative;
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                height : auto;
+                width: 80%;
+                background-color: white;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-top: 5px solid #123C69;
+                border-left: 5px solid #123C69;
+                box-shadow: 5px 5px 5px silver;
+            }
+            .cimg p {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #123C69;
+                align-items: center;
+                margin-top: 30px;
+            }
+            #aChartContainer {
+                float: left;
+                height: 300px;
+                width:80%;
+                margin-top: 8%;
+                margin-left: 5%;
+            }
+            #cChartContainer {
+                float: right;
+                height: 300px;
+                width:95%;
+                margin-left: 5%;
+            }
+            .ico {
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                width: 40px;
+                height: 40px;
+                background-color: #123C69;
+                color: white;
+                margin: 0;
+                padding: 4px 2px 0 2px;
+                border-radius: 50%;
+                align-items: center;
+            }
+            #btn {
+                position: fixed;
+                bottom: 5px;
+                left: 10;
+                border-radius: 50%;
+                font-size: 30px;
+                color: #F08080;
+                padding: 10px;
+                cursor: pointer;
+                border: none; 
+            }
+            #btn:hover {
+                background-color: rgba(240,128,128,0.3);
+                border: 2px solid rgba(240,128,128,0.3);
+            }
+            #credits {
+                position: fixed;
+                bottom: 5px;
+                right: 0;
+                height : 40px;
+            }
+        @media screen and (max-width: 1300px) {
+            .j, .a, .c {width: 95%;}
+            #jChartContainer, #aChartContainer, #cChartContainer { width : 50%; }
+            #aChartContainer { margin-top: 20px;}
+            .cimg { width: 40%;}
+            .bottom-menu {
+                left: 10%;
+                width: 75%;}
+                .dropdown-content{
+                    visibility: hidden;
+                }
+        }
+        @media screen and (max-width: 800px) {
+            .j, .a, .c { width:90%; }
+            #jChartContainer, #aChartContainer, #cChartContainer { width : 95%;
+            margin-left: 3%; }
+            .cimg { width: 90%;}
+            .bottom-menu {
+                left: 10%;
+                width: 75%;}
+            .top-menu img {
+                margin-left: 45%;
+            }
+            .c {
+                margin-bottom: 10%;
+            }
+            #btn{
+                width: 10%;
+                margin-left: 0;
+            }
+            #credits {
+                width: 15%;
+            }
+            .bottom-menu {
+                visibility: hidden;
+                }
+            .dropbtn {
+                visibility: visible;
+                }
+            .dropdown-content{
+                visibility: visible;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .j, .a, .c { width:95%; }
+            #jChartContainer, #aChartContainer, #cChartContainer { width : 95%; }
+            .cimg { width: 90%;}
+            .top-menu img {
+                margin-left: 45%;
+            }
+            .c {
+                margin-bottom: 10%;
+            }
+            #btn{
+                width: 10%;
+                margin-left: 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+            <div class="top-menu">
+                <img src="nm_logo3.png" height="100%">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-ellipsis-v fa-2x"></i></button>
+                    <div class="dropdown-content">
+                      <a href="dashb1.html"><i class="fas fa-globe-asia fa-2x"></i></a>
+                      <a href="dashb2.html"><i class="far fa-chart-bar fa-2x"></i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="content">
+                <div class="j">
+                <div class="chartContainer" id="jChartContainer"></div>
+                <div class="cimg">
+                    <div class="ico"><center><i class="fas fa-clipboard-list fa-2x"></i></center></div>
+                    <p>The Prime Minister of India urged the Indian citizens not to step out of their homes except
+                    for those working in essential services . The day would act as symbol of "our self-control" and the experience will prepare the country for coming challenges.
+                   <br><br>Hashtags used for Analysis:<br>#JanthaCurfew<br>#JanataCurfew</p>
+                    </div>
+                </div>
+                <div class="a">
+                    
+                    <div class="cimg">
+                        <div class="ico"><center><i class="fas fa-clipboard-list fa-2x"></i></center></div>
+                        <p>Aarogya Setu is a mobile application <br> developed by the Government of India to connect essential health services with the people of India in our combined fight against COVID-19.
+                            <br><br>Hashtags used for Analysis:<br> #AarogyaSetu<br>#SetuMeraBodyguard</p>
+                    </div>
+                <div class="chartContainer" id="aChartContainer"></div>
+                </div>
+                <div class="c">
+                <div class="chartContainer" id="cChartContainer"></div>
+                <div class="cimg">
+                    <div class="ico"><center><i class="fas fa-clipboard-list fa-2x"></i></center></div>
+                    <p>The Prime Minister of India urged people to switch off all the lights in their houses and light a diya or a candle or even a torch at 9pm for 9 minutes on April 5. This signified us shedding away the darkness spread by coronavirus and moving forth towards the light.
+                    <br><br>Hashtags used for Analysis: <br> #9Baje9Minutes
+                </p></div>
+                </div>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
+            <div class="bottom-menu">
+                <ul>
+                    <li><a href="dashb1.html"><i class="fas fa-globe-asia fa-2x"></i></a></li>
+                    <li><a href="dashb2.html"><i class="far fa-chart-bar fa-2x"></i></a></li>
+                    <li class="active-link"><a href=""><i class="fas fa-users fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <i  onclick = "like(this)" class="far fa-heart" id="btn"></i>
+            <img id="credits" src="team_name.png">
+    </body>
+    
+</html>
